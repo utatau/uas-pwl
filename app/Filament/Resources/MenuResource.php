@@ -52,6 +52,7 @@ class MenuResource extends Resource
                 TextColumn::make('kategori.jenis_kategori'),
                 ImageColumn::make('gambar')
                 ->circular()
+                ->disk('public')
             ])
             ->filters([
                 //
